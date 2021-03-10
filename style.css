@@ -20,3 +20,19 @@ font-family: Garamond, serif; font-size: 40px ;
 *:focus { 
 outline : none ;
 }
+.expo {
+ border : 5px solid ;
+border-image: conic-gradient(from var(--angle) , red, yellow, lime, aqua, blue, magenta, red) 5;
+
+	animation: 10s rotate linear infinite;  
+ }
+@keyframes rotate {
+	to {
+		--angle: 360deg;
+	}
+}
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
