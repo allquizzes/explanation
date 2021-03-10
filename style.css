@@ -24,7 +24,8 @@ outline : none ;
  border : 5px solid ;
 border-image: conic-gradient(from var(--angle) , red, yellow, lime, aqua, blue, magenta, red) 5;
 
-	animation: 10s rotate linear infinite;  
+	animation: 10s rotate linear infinite;
+padding : 5px ;
  }
 @keyframes rotate {
 	to {
