@@ -49,11 +49,12 @@ Neptune has six rings, but they're very hard to see. <a href="https://spaceplace
 </div>
 <script>
 function open() {
-var i = 0 ;
-while (i < 8) {
-document.getElementsByTagName("details")[i].open = true ;
- i++ ;
- }
+var i = 0;
+do {
+    document.getElementsByTagName("details")[i].open = true ;
+   i++;
+}
+while (i < 100);  
 }
 </script>
 </body>
