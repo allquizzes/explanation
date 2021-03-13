@@ -15,7 +15,7 @@ if (currentTheme == "dark") {
 </script><center>
 <a href="https://allquizzes.github.io/" class="a" >Go to Home Page</a>
 <h1><br>Explanation: Planet-Extremes Quiz<br><br></h1>
-
+<button class="open" onclick="openall()" >Open All</button></center>
 <div class="expo">
 <details><summary>Smallest Planet</summary>
 <b>Ans- Mercury</b><br>Mercury is the smallest planet in the Solar System. It is even smaller than the Moon. It has a diameter of 4879 km. Mercury has no moons. Mercury's thin atmosphere, or exosphere, is composed mostly of oxygen (O2), sodium (Na), hydrogen (H2), helium (He), and potassium (K).</details>
@@ -47,7 +47,11 @@ Neptune has six rings, but they're very hard to see. <a href="https://spaceplace
 <b>Ans-</b><br></details>
 
 </div>
-<script src="../extra.js" ></script>
+<script>
+function openall() {
+document.getElementsByTagName("details")[0].open = true ;
+}
+</script>
 </body>
 </html>
 
